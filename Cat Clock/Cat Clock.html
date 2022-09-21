@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nAMe="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Clock</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font: 14px/26px 'Bungee', Helvetica, Arial, sans-serif;
+            background: linear-gradient(90deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+        }
+        header h1{
+            text-align: center;
+            font-size: 35px;
+        }
+        #box{
+            width:50%;
+            margin: auto;
+        }
+        #cont1{
+            text-align: center;
+        }
+        #clock{
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        #cont1 img{
+            width: 60%;
+        }
+        #cont2{
+            text-align: center;
+        }
+        #cont2 select{
+            margin-top: 5px;
+        }
+        footer{
+            text-align: center;
+            margin-top: 30px;
+        }
+        #button{
+            width: 100px;
+            height: 30px;
+            background: cyan;
+            border: none;
+            border: 2px red solid;
+            border-radius: 5px;
+        }
+    </style>
+
+    <script>
+        let x=0;
+
+        function partymode(){     
+            if(x==0){
+            document.getElementById("button").innerHTML = "Party Over";
+            document.getElementById("image").src = "Cat2.jpg";
+            document.getElementById("button").style.cssText= `background: red; color: cyan; border: 2px solid cyan; borderRadius: 5px`;
+            return x=1;
+            }
+            else{
+            document.getElementById("button").innerHTML = "Party Time!"
+            document.getElementById("image").src = "Cat1.jpg";
+            document.getElementById("button").style.cssText= `background: cyan; color: red; border: 2px solid red; borderRadius: 5px`;
+            return x=0;
+            }
+        }
+
+        setInterval(clocktime,1);
+        function clocktime(){
+            const d= new Date();
+            let hrs= d.getHours();
+            let min= d.getMinutes();
+            let sec= d.getSeconds(); 
+            let am_pm;
+            let clock=document.getElementById('clock');
+            
+            if(hrs>=12){
+                am_pm= "PM";
+                if(hrs>12){
+                    hrs = hrs-12;
+                }
+            }
+            else{
+                am_pm= "AM"
+            }
+            if(hrs<10){
+                hrs = "0"+hrs;
+            }
+            if(min<10){
+                min = "0"+min;
+            }
+            if(sec<10){
+                sec = "0"+sec;
+            }
+            let time= `${hrs}:${min}:${sec} ${am_pm}`; 
+            clock.innerHTML = time;
+        }
+        clocktime();
+
+    </script>
+</head>
+<body>
+<div id="box">
+    <header>
+        <h1>Cat Clock</h1>
+    </header>
+    <section id="cont1">
+        <div id="clock">
+            <span >Time Goes here</p>
+        </div>
+        <img src="Cat1.jpg" id="image">
+    </section>
+    <section id="cont2">
+        Set Wakeup Time <select>
+            <option>8AM-9AM</option>
+            <option>9AM-10AM</option><option>10AM-11AM</option>
+            <option>11AM-12AM</option>
+        </select><br>
+        Set Lunch Time <select>
+            <option>12PM-1PM</option>
+            <option>1PM-2PM</option><option>2PM-3PM</option>
+            <option>3PM-4PM</option>
+        </select><br>
+        Set Dinner Time <select>
+                <option>7PM-8PM</option>
+                <option>8PM-9PM</option><option>9PM-10PM</option>
+                <option>10PM-11PM</option>
+        </select><br>
+    </section>
+    <footer>
+        <button id="button" onclick="partymode()">Party Time!</button><br>
+        <span>@bhishek 2022</span>
+    </footer>
+</div>
+</body>
+</html>

@@ -3,3 +3,4 @@ These are challenges i've completed based on HTML, CSS and JavaScript , Bootstra
 | Project Name          | Project View Link |
 | ----------------------| ------------------|
 | Interactive Card Details | https://11aj.github.io/JavaScript_Projects/Interactive%20Card%20Details%20Form/index.html|
+| Cat Clock |   https://11aj.github.io/JavaScript_Projects/Cat%20Clock/Cat%20Clock.html |

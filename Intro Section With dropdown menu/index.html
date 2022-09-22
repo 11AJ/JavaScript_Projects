@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Hearder Starts -->
+    <div class="navbar">
+      <div class="left">
+        <img src="./images/logo.svg" alt="">
+        <div class="menu">
+          <div class="drop-1 drop-show">Features <span class="down-arrowhead">&#8964</span>
+            <div class="dropdown-1">
+              <div><img src="./images/icon-todo.svg" alt="">Todo List</div>
+              <div><img src="./images/icon-calendar.svg" alt="">Calendar</div>
+              <div><img src="./images/icon-reminders.svg" alt="">Reminders</div>
+              <div><img src="./images/icon-planning.svg" alt="">Planning</div>
+            </div>
+          </div>
+          <div class="drop-2 drop-show">Company<span class="down-arrowhead">&#8964</span>
+            <div class="dropdown-2">
+              <div>History</div>
+              <div>Our Team</div>
+              <div>Blog</div>
+            </div>
+          </div>
+          <div>Career</div>
+          <div>About</div>
+        </div>     
+      </div>
+      <div class="right">
+          <button class="btn-1">Login</button>
+        <button class="btn-1">Register</button>
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <!-- slide menu for mobile screen -->
+    <div class="right-slide-menu">
+      <button class="btn-2">X</button>
+      <div class="slide-menu">  
+        <div class="slide-drop slide-drop-1">
+          Features&#8964
+          <div class="slide-dropdown-1">
+            <div><img src="./images/icon-todo.svg" alt="">Todo List</div>
+            <div><img src="./images/icon-calendar.svg" alt="">Calendar</div>
+            <div><img src="./images/icon-reminders.svg" alt="">Reminders</div>
+            <div><img src="./images/icon-planning.svg" alt="">Planning</div>
+          </div>
+        </div>
+        <div class="slide-drop slide-drop-2">Company&#8964
+          <div class="slide-dropdown-2">
+            <div>History</div>
+            <div>Our Team</div>
+            <div>Blog</div>
+          </div>
+        </div>
+        <div>Career</div>
+        <div>About</div>
+      </div>
+      <div class="slide-signup">
+        <button class="btn-1">Login</button>
+        <button class="btn-1">Register</button>
+      </div>
+    </div>
+
+    <!-- content of the page -->
+    <div class="content">
+      <div class="box1">
+        <div class="box1-inner">
+          <h1>Make remote work</h1>
+          <p>Get your teams in sync, no matter your location. streamline processes, create team rituals, and watch productivity sour.</p>
+          <button class="btn-3">Learn More</button>
+        </div>
+      </div>
+      <div class="box2">
+         <div class="desktop">
+          <img src="./images/image-hero-desktop.png" alt="">
+         </div>
+         <div class="mobile">
+           <img src="./images/image-hero-mobile.png" alt="">
+          </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

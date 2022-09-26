@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body{
+    background: url(https://picsum.photos/1800/1200) no-repeat;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.box{
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 5px 5px 20px gray;
+    background-color: gray;
+}
+
+.header-row{
+    width: 100%;
+    height: 10%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notification p{
+    font-size: 20px;
+}
+.notification input{
+    width: 10px;
+    height: 10px;
+    background-color: violet;
+    color: white;
+    border: none;
+}
+.unread{
+    display: none;
+}
+.red-dot{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 100%;
+    background-color: red;
+    display: inline-block;
+}
+
+@media screen and (max-width: 650px){
+    .box{
+        width: 100%;
+        margin: auto;
+    }
+    .notification{
+        width: 30%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .notification p{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .notification input{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: rgb(133, 35, 133);
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 5px;
+    }
+    .mark-all-as-read{
+        margin-right: 20px;
+        margin-top: 5px;
+        text-decoration: underline;
+    }
+    .row{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 20px;
+    }
+    .image{
+        border: 2px solid black;
+        background-position: center;
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        overflow-x: hidden;
+        margin-right: 20px;
+    }
+    .content{
+        width: fit-content;
+        font-size: 18px;
+    }
+    .content span{
+        font-weight: 800;
+    }
+    .content p{
+        display: inline;
+        font-weight: 600;
+    }
+    
+    .content a{
+        color: grey;
+        margin-top: 0;
+    }
+    .r1 .image{
+        background-image: url(./assets/images/avatar-mark-webber.webp);
+        /* width: 60px; */
+    }
+    .r2 .image{
+        background-image: url(./assets/images/avatar-angela-gray.webp);
+        /* width: 50px; */
+    }
+    .r3 .image{
+        background-image: url('./assets/images/avatar-jacob-thompson.webp');
+        /* width: 60px; */
+    }
+    .r4 .image{
+        background-image: url('./assets/images/avatar-rizky-hasanuddin.webp');
+        /* width: 60px; */
+    }
+    .message{
+        width: 80%;
+        margin-left: 20%;
+        font-weight: normal;
+        border: 2px solid rgb(212, 207, 207);
+        font-size: 16px;
+        padding: 10px;
+        color: rgb(107, 106, 106);
+    }
+    .r5 .image{
+        background-image: url(./assets/images/avatar-kimberly-smith.webp);
+        /* width: 60px; */
+    }
+    .picture{
+        width: 70px;
+        height: 50px;
+        background-image: url(./assets/images/image-chess.webp);
+        background-position: center;
+        background-size: cover;
+        align-items: flex-end;
+    }
+    .r6 .image{
+        background-image: url(./assets/images/avatar-nathan-peterson.webp);
+        /* width: 60px; */
+    }
+    .r7 .image{
+        background-image: url(./assets/images/avatar-anna-kim.webp);
+        /* width: 58px; */
+    }
+    .r3 >.content p,.r7 >.content p{
+        color: rgb(9, 9, 155);
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+    .container{
+        width: 60%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .box{
+        width: 100%;
+        padding: 10px;
+    }
+    .header-row{
+        width: 90%;
+        margin: auto;
+    }
+    .notification{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+    }
+    .notification input{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: purple;
+        color: white;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .mark-all-as-read{
+        width: 60%;
+        text-align: right;
+        text-decoration: underline;
+    }
+    .mark-all-as-read:hover{
+        cursor: pointer;
+    }
+    .row{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 20px;
+    }
+    .row .image{
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        background-position: center;
+        background-size: cover;
+        border-radius: 100%;
+        overflow-x: hidden;
+        margin-right: 20px;
+    }
+    .content p{
+        display: inline;
+    }
+    .content span{
+        font-weight: 900;
+    }
+    .content p{
+        font-weight: 600;
+    }
+    .content a{
+        color: gray;
+    }
+    .r1 .image{
+        background-image: url(./assets/images/avatar-mark-webber.webp);
+        background-position: center;
+        width: 20%;
+    }
+    .r2 .image{
+        background-image: url(./assets/images/avatar-angela-gray.webp);
+        background-position: center;
+        width: 13%;
+    }
+    .r3 .image{
+        background-image: url(./assets/images/avatar-jacob-thompson.webp);
+        background-position: center;
+        width: 16%;
+    }
+    .r4 .image{
+        background-image: url(./assets/images/avatar-rizky-hasanuddin.webp);
+        background-position: center;
+        width: 43%;
+    }
+    .message{
+        width: 80%;
+        margin-left: 20%;
+        border: 2px solid rgb(201, 198, 198);
+        padding: 10px;
+    }
+    .r5 .image{
+        background-image: url(./assets/images/avatar-kimberly-smith.webp);
+        background-position: center;
+        width: 13%;
+    }
+    .r6 .image{
+        background-image: url(./assets/images/avatar-nathan-peterson.webp);
+        background-position: center;
+        width: 26%;
+    }
+    .r7 .image{
+        background-image: url(./assets/images/avatar-anna-kim.webp);
+        width: 13%;
+        background-position: center;
+    }
+    .picture{
+        width: 70px;
+        height: 50px;
+        background-image: url(./assets/images/image-chess.webp);
+        background-position: center;
+        background-size: cover;
+        align-items: flex-end;
+    }
+}
+
+
+@media screen and (min-width: 857px) {
+    .container{
+        width: 100%;
+    }
+    .box{
+        margin-top: 5%;
+        width: 40%;
+        font-size: 20px;
+    }
+    .notification{
+        padding: 10px 20px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .notification p{
+        font-weight: 800;
+    }
+    .notification input{
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        background-color: rgb(133, 35, 133);
+        color: white;
+        text-align: right;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 5px;
+    }
+    .mark-all-as-read{
+        width: 30%;
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+    .row{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content{
+        width: 75%;
+        padding: 5px 0;
+    }
+    .content span{
+        font-weight: 900;
+    }
+    .content p{
+        font-weight: 600;
+        display: inline-block;
+    }
+    .message{
+        width: 80%;
+        margin-left: 20%;
+        border: 2px solid rgb(202, 201, 201);
+        padding: 10px;
+    }
+    .image{
+        width: 20%;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background: no-repeat;
+        margin-left: 50px;
+    }
+    .r1 .image{
+        background: url(./assets/images/avatar-mark-webber.webp);
+        background-position: center;
+        /* width: 20%; */
+    }
+    .r2 .image{
+        background: url(./assets/images/avatar-angela-gray.webp);
+        background-position: center;
+        /* width: 13%; */
+    }
+    .r3 .image{
+        background-image: url(./assets/images/avatar-jacob-thompson.webp);
+        background-position: center;
+        /* width: 16%; */
+    }
+    .r4 .image{
+        background-image: url(./assets/images/avatar-rizky-hasanuddin.webp);
+        background-position: center;
+        /* width: 43%; */
+    }
+    .r5 .image{
+        background-image: url(./assets/images/avatar-kimberly-smith.webp);
+        background-position: center;
+        /* width: 13%; */
+    }
+    .r6 .image{
+        background-image: url(./assets/images/avatar-nathan-peterson.webp);
+        background-position: center;
+        /* width: 26%; */
+    }
+    .r7 .image{
+        background-image: url(./assets/images/avatar-anna-kim.webp);
+        /* width: 13%; */
+        background-position: center;
+    }
+    .picture{
+        width: 70px;
+        height: 70px;
+        background-image: url(./assets/images/image-chess.webp);
+        background-position: center;
+        background-size: cover;
+        align-items: flex-end;
+    }
+    .r5 .content{
+        width: 58%;
+        padding: 0;
+        margin-left: 2%;
+        padding-right: 0;
+    }
+}

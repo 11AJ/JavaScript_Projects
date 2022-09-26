@@ -6,3 +6,4 @@
 | Drum Kit                 |  https://11aj.github.io/JavaScript_Projects/Drum%20Kit/index.html                                     |
 | Flex Image Gallery       |  https://11aj.github.io/JavaScript_Projects/FLex%20Image%20Gallery/index.html                         |  
 | Interactive Landing Page |  https://11aj.github.io/JavaScript_Projects/Intro%20Section%20With%20dropdown%20menu/index.html | 
+| Notification Page   |    https://11aj.github.io/JavaScript_Projects/Notification%20Page/index.html   |

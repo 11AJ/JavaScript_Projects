@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 5%, 89%);
+}
+body{
+    background-color: var(--White);
+    opacity: .9;
+}
+.container{
+    width: 80%;
+    height: 800px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    gap: 20px;
+}
+.item-1,.item-2,.item-3,.item-4,.item-5{
+    padding: 20px;
+}
+.colon{
+    background: url(./images/bg-pattern-quotation.svg) no-repeat;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    z-index: 1;
+}
+.header{
+    display: flex;
+}
+.white{
+    color: white;
+}
+.gray{
+    color: rgb(106, 106, 106);
+}
+.header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.header-right{
+    width: 40%;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+.content{
+    position: relative;
+    padding: 20px;
+    z-index: 3;
+}
+.content p{
+    font-size: 20px;
+    font-weight: 800;
+}
+.content span{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.item-1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: var(--Moderate-violet);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    position: relative;
+}
+
+.item-2{
+    border-radius: 10px;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: var(--Very-dark-grayish-blue);
+    box-shadow: 5px 5px 10px gray;
+
+}
+.item-3{
+    border-radius: 10px;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    box-shadow: 5px 5px 10px gray;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--White);
+}
+.item-4{
+    border-radius: 10px;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    box-shadow: 5px 5px 10px gray;
+    background-color: var(--Very-dark-blackish-blue);
+}
+.item-5{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 7;
+    grid-column-start: 8;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10px;
+    background-color: var(--White);
+}
+.item-2 .content p , .item-3 .content p , .item-5 .content p{
+    font-size: 28px;
+}

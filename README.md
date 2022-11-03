@@ -11,5 +11,5 @@
 | Pricing Content          | https://11aj.github.io/JavaScript_Projects/Pricing%20Content%20with%20Toggle%20Button/index.html                   |
 | Social Media DashBoard   | https://11aj.github.io/JavaScript_Projects/Social%20Media%20Dashboard/index.html                                   |
 | Button Ripple Effect     | https://11aj.github.io/JavaScript_Projects/Button%20Ripple%20Effect/index.html                                     |
-| Testimonial Slider       | https://11aj.github.io/JavaScript_Projects/Testimonial%20Slider/index.html                                        |
-| Advice Generator App     | https://11aj.github.io/JavaScript_Projects/                                        |
+| Testimonial Slider       | https://11aj.github.io/JavaScript_Projects/Testimonial%20Slider/index.html                                         |
+| Advice Generator App     | https://11aj.github.io/JavaScript_Projects/Advice%20Generator%20App/index.html                                     |
